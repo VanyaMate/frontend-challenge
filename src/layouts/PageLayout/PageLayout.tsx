@@ -9,7 +9,7 @@ const PageLayout: React.FC = () => {
         <main>
             <header>
                 <ul>
-                    <img alt="" src="/arms.png"/>
+                    <img alt="" src="/src/assets/arms.png"/>
                     <li><Link to="/">home</Link></li>
                     <li><Link to="/favorites">favorites</Link></li>
                 </ul>
