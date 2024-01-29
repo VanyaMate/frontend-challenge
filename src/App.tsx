@@ -1,12 +1,9 @@
 import React from 'react';
+import Pages from '@/pages/Pages.tsx';
 
 
 const App: React.FC = () => {
-    return (
-        <div>
-            AppComponent
-        </div>
-    );
+    return <Pages/>;
 };
 
 export default React.memo(App);
