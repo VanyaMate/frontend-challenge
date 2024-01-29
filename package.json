@@ -1,0 +1,35 @@
+{
+    "name": "frontend-challenge",
+    "version": "1.0.0",
+    "description": "Привет! Если ты хочешь стать частью команды Учи.ру в рамках стажёрской программы, \r то тебе необходимо выполнить небольшое тестовое задание. Это нужно, что бы твои \r потенциальные наставники смогли оценить твои навыки и сравнив их с остальными\r кандидатами выбрать лучших из лучших.",
+    "main": "index.js",
+    "scripts": {
+        "start:dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/react": "^18.2.48",
+        "@types/react-dom": "^18.2.18",
+        "@types/react-router-dom": "^5.3.3",
+        "@typescript-eslint/eslint-plugin": "^6.20.0",
+        "@typescript-eslint/parser": "^6.20.0",
+        "@vitejs/plugin-react-swc": "^3.5.0",
+        "eslint": "^8.56.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.5",
+        "typescript": "^5.3.3",
+        "vite": "^5.0.12"
+    },
+    "dependencies": {
+        "@vanyamate/helpers": "^0.0.5",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.21.3",
+        "sass": "^1.70.0"
+    }
+}
