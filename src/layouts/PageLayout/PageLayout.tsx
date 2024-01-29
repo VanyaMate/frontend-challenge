@@ -3,17 +3,9 @@ import { Link, Outlet } from 'react-router-dom';
 
 
 const PageLayout: React.FC = () => {
-    console.log('layout');
-
     return (
         <main>
-            <header>
-                <ul>
-                    <img alt="" src="images/arms.png"/>
-                    <li><Link to="/">home</Link></li>
-                    <li><Link to="/favorites">favorites</Link></li>
-                </ul>
-            </header>
+            navigation
             <section>
                 <Outlet/>
             </section>
