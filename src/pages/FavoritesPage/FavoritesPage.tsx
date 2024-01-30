@@ -1,11 +1,12 @@
 import React from 'react';
+import PageWidth from '@/components/ui/container/PageWidth/PageWidth.tsx';
 
 
 const FavoritesPage: React.FC = () => {
     return (
-        <div>
+        <PageWidth>
             FavoritesPageComponent
-        </div>
+        </PageWidth>
     );
 };
 

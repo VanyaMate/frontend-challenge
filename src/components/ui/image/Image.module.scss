@@ -1,0 +1,37 @@
+.container {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 100%;
+    height          : 100%;
+    overflow        : hidden;
+    background      : var(--main-color-darken);
+    border-radius   : var(--offset-medium);
+
+    .image {
+        max-width  : 100%;
+        max-height : 100%;
+    }
+
+    &.loading {
+        position : relative;
+        z-index  : 0;
+
+        &:after {
+            content       : '';
+
+            position      : absolute;
+            top           : var(--offset-medium);
+            right         : var(--offset-medium);
+            transform     : translate(-50%, -50%);
+            width         : 20px;
+            height        : 20px;
+
+            border-radius : 50%;
+            border        : 2px dotted transparent;
+            border-right  : 2px dotted var(--main-color);
+
+            animation     : var(--loading);
+        }
+    }
+}

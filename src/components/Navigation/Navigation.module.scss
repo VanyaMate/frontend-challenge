@@ -1,0 +1,18 @@
+$height : 64px;
+
+.container {
+    background : var(--main-color);
+    height     : $height;
+
+    .list {
+        display         : flex;
+        gap             : var(--offset-small);
+        list-style-type : none;
+
+        .item {
+            .link {
+                height : $height;
+            }
+        }
+    }
+}

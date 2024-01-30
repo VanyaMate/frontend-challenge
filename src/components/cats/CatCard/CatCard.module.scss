@@ -1,0 +1,35 @@
+$size : 225px;
+
+.container {
+    width      : $size;
+    height     : $size;
+    box-shadow : var(--shadow-none);
+    transition : var(--transition-slow);
+    position   : relative;
+
+    &:hover {
+        &.clickable {
+            transform  : scale(1.2);
+            box-shadow : var(--shadow-large);
+        }
+
+        &:not(.clickable) {
+            transform  : scale(1.1);
+            box-shadow : var(--shadow-small);
+        }
+
+        z-index : 1;
+    }
+
+    &.clickable {
+        .image {
+            cursor : pointer;
+        }
+    }
+
+    .extra {
+        position : absolute;
+        bottom   : var(--offset-medium);
+        right    : var(--offset-medium);
+    }
+}

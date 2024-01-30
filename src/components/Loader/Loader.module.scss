@@ -1,0 +1,20 @@
+.container {
+    padding         : var(--offset-extra-large);
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    border-radius   : var(--offset-medium);
+    background      : var(--main-color-darken);
+    width           : 100%;
+
+    &:after {
+        content       : '';
+        width         : var(--offset-extra-large);
+        height        : var(--offset-extra-large);
+        border        : 4px dotted transparent;
+        border-right  : 4px dotted var(--main-color);
+        border-radius : 50%;
+
+        animation     : var(--loading);
+    }
+}
