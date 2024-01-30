@@ -5,7 +5,7 @@ import CatCatalogueContainer
 
 const HomePage: React.FC = () => {
     return (
-        <CatCatalogueContainer/>
+        <CatCatalogueContainer limit={ 30 } order="RAND" page={ 0 }/>
     );
 };
 
