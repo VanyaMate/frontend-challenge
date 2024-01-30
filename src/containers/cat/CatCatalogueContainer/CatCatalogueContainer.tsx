@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useCallback, useContext, useRef } from 'react';
 import PageWidth from '@/components/ui/container/PageWidth/PageWidth.tsx';
 import TileBox from '@/components/ui/container/TileBox/TileBox.tsx';
 import CatCard from '@/components/cats/CatCard/CatCard.tsx';
@@ -8,6 +8,9 @@ import {
 import { useFetchInfiniteCats } from '@/hooks/cats/fetch/useFetchInfiniteCats.ts';
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll.ts';
 import Loader from '@/components/Loader/Loader.tsx';
+import CatFavoriteButtonContainer
+    from '@/containers/cat/CatFavoriteButtonContainer/CatFavoriteButtonContainer.tsx';
+import { CatFavoritesContext } from '@/contexts/cat/CatFavoritesContext.ts';
 
 
 export type CatCatalogueContainerProps = {
@@ -36,7 +39,11 @@ const CatCatalogueContainer: React.FC<CatCatalogueContainerProps> = (props) => {
                 <TileBox>
                     {
                         cats.map((cat) => (
-                            <CatCard catImage={ cat.url } key={ cat.id }/>
+                            <CatCard
+                                catImage={ cat.url }
+                                extra={ <CatFavoriteButtonContainer id={ cat.url }/> }
+                                key={ cat.id }
+                            />
                         ))
                     }
                     {

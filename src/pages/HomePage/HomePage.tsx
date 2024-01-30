@@ -1,6 +1,6 @@
 import React from 'react';
 import CatCatalogueContainer
-    from '@/containers/CatCatalogueContainer/CatCatalogueContainer.tsx';
+    from '@/containers/cat/CatCatalogueContainer/CatCatalogueContainer.tsx';
 
 
 const HomePage: React.FC = () => {

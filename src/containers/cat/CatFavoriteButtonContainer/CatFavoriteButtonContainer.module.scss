@@ -1,0 +1,15 @@
+.container {
+    padding       : var(--offset-small);
+    border-radius : var(--offset-small);
+    background    : var(--background-color);
+    cursor        : pointer;
+
+    .icon {
+        font-size : 26px;
+        color     : var(--main-color-second);
+
+        &.isFavorite {
+            color : var(--color-red);
+        }
+    }
+}
